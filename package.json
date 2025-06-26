@@ -1,0 +1,41 @@
+{
+  "name": "file-organizer-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/react-window": "^1.8.8",
+    "autoprefixer": "^10.4.21",
+    "date-fns": "^4.1.0",
+    "postcss": "^8.5.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-window": "^1.8.11",
+    "react-window-infinite-loader": "^1.0.10",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.27.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/testing-library__react": "^10.0.1",
+    "babel-jest": "^30.0.2",
+    "bser": "^2.1.1",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.3.4",
+    "jest": "^30.0.3",
+    "jest-environment-jsdom": "^30.0.2",
+    "next": "^15.3.4",
+    "ts-jest": "^29.4.0"
+  }
+}

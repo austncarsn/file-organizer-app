@@ -1,0 +1,8 @@
+{
+  "contexts/FileSystemContext.tsx -> ../data/mockFiles": {
+    "id": "contexts/FileSystemContext.tsx -> ../data/mockFiles",
+    "files": [
+      "static/chunks/_app-pages-browser_data_mockFiles_ts.js"
+    ]
+  }
+}
