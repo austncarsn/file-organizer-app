@@ -1,13 +1,83 @@
 # File Organizer App
 
-## Overview
-The File Organizer App is a modern web application designed for efficient file management, inspired by industry leaders like Dropbox and Google Drive. Built with React 18+, TypeScript, and Tailwind CSS, this application provides a seamless user experience with a focus on performance, accessibility, and responsive design.
+Modern Next.js tool for fast, accessible file management.
+
+## Tech stack
+Next.js 15, React 18, Tailwind CSS, shadcn ui, Zustand
 
 ## Features
-- **File Display System**: Toggle between grid and list views with customizable density options. Sort files by name, size, type, and modified date.
-- **Selection Mechanics**: Supports single, multi, and range selection with keyboard shortcuts. Includes lasso selection for grid view.
-- **Batch Operations**: Perform actions like move, copy, delete, archive, and tag with a contextual toolbar. Features undo/redo functionality and operation progress indicators.
-- **Drag & Drop System**: Intuitive drag-and-drop support with visual feedback and touch-friendly interactions.
+✨ **Enhanced UI/UX**
+- Command palette (Cmd+K) for instant access to files and actions
+- Context menus with right-click file operations
+- Inline preview on hover with smart positioning
+- Smooth animations and micro-interactions
+- WCAG AA accessibility compliance
+
+⚡ **Performance Optimized**
+- Virtualized file grid handles 10,000+ files smoothly
+- Memoized components and efficient re-rendering
+- Progressive loading and lazy image optimization
+
+⌨️ **Keyboard Navigation**
+- Full keyboard accessibility with arrow key navigation
+- Comprehensive shortcuts (select all, copy, paste, delete)
+- Focus management and visual indicators
+
+🎨 **Modern Design System**
+- Semantic color tokens with dark/light mode support
+- Consistent spacing and typography scales
+- Responsive grid layouts and mobile-friendly interactions
+
+## Quick start
+```bash
+pnpm install
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the app.
+
+## Scripts
+- `dev` - Local development server
+- `build` - Production build
+- `lint` - ESLint checks
+- `test` - Jest + React Testing Library
+
+## Architecture
+```
+components/
+├── file-system/          # Core file components
+├── ui/                   # Reusable UI components
+├── CommandPalette.tsx    # Global search & actions
+├── ContextMenu.tsx       # Right-click operations
+├── InlinePreview.tsx     # Hover file previews
+└── VirtualizedFileGrid.tsx # Performance-optimized grid
+
+hooks/
+├── useKeyboardShortcuts.ts # Global hotkeys
+├── useSelection.ts         # Multi-select logic
+└── useVirtualization.ts    # Grid virtualization
+
+contexts/
+├── FileSystemContext.tsx  # File state management
+├── SelectionContext.tsx   # Selection state
+└── ThemeContext.tsx       # Theme switching
+```
+
+## Performance Targets
+- **Lighthouse Performance**: ≥90
+- **Lighthouse Accessibility**: ≥95
+- **File Handling**: 10,000+ files with smooth 60fps
+- **Bundle Size**: <500kb gzipped
+
+## Contributing
+1. Fork the repository
+2. Create feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+## License
+MIT
 - **Search & Filter**: Real-time search with debouncing and advanced filtering options.
 
 ## Installation
